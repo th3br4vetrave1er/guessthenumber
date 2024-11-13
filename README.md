@@ -19,10 +19,10 @@ A simple yet exciting number guessing game created in Python. The game challenge
 
 ## 🚀 Running the Game
 
-To start the game, simply clone this repository and run the `guessing_game.py` file in any Python environment.
+To start the game, simply clone this repository and run the `main.py` file in any Python environment.
 
 ```bash
-python guessing_game.py
+python main.py
 ```
 
 ## Sample Game Session

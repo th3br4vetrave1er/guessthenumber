@@ -4,7 +4,7 @@ print("Welcome to the guess game! Can you guess the number?")
 
 wrong_guess = 0          # Here we will count the wrong guesses
 win_guess = random.randint(0, 100) # This is the number, that randomly was picked by game
-print(win_guess)
+print(win_guess) # for testing purpose
 
 
 while True:
@@ -18,7 +18,7 @@ while True:
         print("BAD LUCK! Try again!") # If wrong, we give another chance to the player
         wrong_guess += 1
 
-    except ValueError:
+    except Exception:
         print("PLEASE USE THE NUMBERS! :(")
         wrong_guess += 1
 
