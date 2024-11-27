@@ -1,25 +1,26 @@
 import random
 
-print("Welcome to the guess game! Can you guess the number?")
+name = input("First things first! Tell me your name, mate: ")
 
+print(f"Welcome to the guess game, {name}! Can you guess the number?")
 wrong_guess = 0          # Here we will count the wrong guesses
 win_guess = random.randint(0, 100) # This is the number, that randomly was picked by game
-print(win_guess) # for testing purpose
+print(win_guess) # for testing purposes
 
 
 while True:
     try:
-        players_answer = int(input("Type the number between 0 and 100: "))
+        players_answer = int(input("So, type the number between 0 and 100: "))
 
         if players_answer == win_guess:  #checking if answer is right
             print(f"WOW! You won! The number was {win_guess} and you guessed it only with {wrong_guess + 1} tries! :D")
             break  # the game is over, cause player won!
 
-        print("BAD LUCK! Try again!") # If wrong, we give another chance to the player
+        print(f"BAD LUCK, {name}! Try again!") # If wrong, we give another chance to the player
         wrong_guess += 1
 
     except Exception:
-        print("PLEASE USE THE NUMBERS! :(")
+        print(f"PLEASE, {name} USE THE NUMBERS! :(")
         wrong_guess += 1
 
 
