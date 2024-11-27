@@ -4,7 +4,7 @@ name = input("First things first! Tell me your name, mate: ")
 
 print(f"Welcome to the guess game, {name}! Can you guess the number?")
 wrong_guess = 0          # Here we will count the wrong guesses
-win_guess = random.randint(0, 100) # This is the number, that randomly was picked by game
+win_guess = random.randint(0, 100000000000) # This is the number, that randomly was picked by game
 print(win_guess) # for testing purposes
 
 
